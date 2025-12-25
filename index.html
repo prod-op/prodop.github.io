@@ -1,0 +1,60 @@
+index.html
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8" />
+  <title>prod. op</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600&family=Inter:wght@300;400&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header>
+  <div class="logo">prod. op</div>
+  <nav>
+    <a href="#beats" data-pt="Beats" data-en="Beats">Beats</a>
+    <a href="#kits" data-pt="Kits" data-en="Kits">Kits</a>
+    <a href="#licenses" data-pt="Licenças" data-en="Licenses">Licenças</a>
+    <span class="lang-toggle">
+      <button onclick="setLang('pt')">PT</button>
+      <button onclick="setLang('en')">EN</button>
+    </span>
+  </nav>
+</header>
+
+<section class="hero">
+  <h1 data-pt="Beats originais. Licenças claras." data-en="Original beats. Clear licenses."></h1>
+</section>
+
+<section id="beats">
+  <div class="section-header">
+    <h2 data-pt="Catálogo de Beats" data-en="Beat Catalog"></h2>
+    <button id="addBeatBtn">＋</button>
+  </div>
+  <div id="beatList" class="grid"></div>
+</section>
+
+<section id="licenses">
+  <h2 data-pt="Licenças" data-en="Licenses"></h2>
+  <div class="licenses">
+    <div>
+      <h3>Basic</h3>
+      <p data-pt="Uso não exclusivo. Monetização limitada."
+         data-en="Non-exclusive use. Limited monetization."></p>
+    </div>
+    <div>
+      <h3>Exclusive</h3>
+      <p data-pt="Uso total. Beat removido do catálogo."
+         data-en="Full rights. Beat removed from catalog."></p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>© prod. op</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
+
